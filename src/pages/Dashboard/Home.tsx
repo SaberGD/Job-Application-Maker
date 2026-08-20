@@ -18,6 +18,7 @@ import {
 } from '../../icons';
 import InterviewScheduleWidget from '../../components/charts/MyInterviewWidget';
 import RejectionInsightsChart from '../../components/charts/RejectionInsightsChart';
+import QuickActions from '../../components/dashboard/QuickActions';
 
 const getStatusIcon = (statusName: string): any => {
   const lowerStatus = statusName.toLowerCase();
@@ -295,10 +296,12 @@ export default function Home() {
           </div>
         ) : (
           <>
+        <QuickActions />
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
           <div
             onClick={handleTotalCardClick}
-            className="rounded-2xl border border-gray-200 bg-gradient-to-br from-gray-50 to-gray-100 p-5 dark:from-gray-800 dark:to-gray-900 cursor-pointer transition hover:shadow-md hover:scale-[1.02]"
+            style={{ animationDelay: '0ms' }}
+            className="animate-fade-slide-in rounded-2xl border border-gray-200 bg-gradient-to-br from-gray-50 to-gray-100 p-5 dark:from-gray-800 dark:to-gray-900 cursor-pointer transition hover:shadow-md hover:scale-[1.02]"
           >
             <div className="flex items-center justify-between">
               <div className="text-sm font-medium text-gray-600 dark:text-gray-400">
@@ -330,19 +333,20 @@ export default function Home() {
                   <div className="mt-2 h-8 w-12 rounded bg-gray-200 animate-pulse" />
                 </div>
               ))
-            : statusCards.map((card) => {
+            : statusCards.map((card, cardIdx) => {
                 const Icon = card.icon;
                 const bgStyle = {
                   backgroundColor: card.bgColor + '15',
                   borderLeftColor: card.bgColor,
                   borderLeftWidth: '4px',
+                  animationDelay: `${(cardIdx + 1) * 40}ms`,
                 };
 
                 return (
                   <div
                     key={card.name}
                     onClick={() => handleStatusCardClick(card.name)}
-                    className="rounded-2xl border border-gray-200 p-5 dark:border-gray-800 cursor-pointer transition-all hover:shadow-md hover:scale-[1.02]"
+                    className="animate-fade-slide-in rounded-2xl border border-gray-200 p-5 dark:border-gray-800 cursor-pointer transition-all hover:shadow-md hover:scale-[1.02]"
                     style={bgStyle}
                   >
                     <div className="flex items-center justify-between">

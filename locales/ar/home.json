@@ -17,5 +17,22 @@
   "hoursAgo": "منذ {hours} ساعات",
   "yesterday": "أمس",
   "daysAgo": "منذ {days} أيام",
-  "selectCompany": "اختر شركة لعرض لوحة التحكم"
+  "selectCompany": "اختر شركة لعرض لوحة التحكم",
+  "quickActionsTitle": "اختصارات سريعة",
+  "mostUsed": "الأكثر استخدامًا",
+  "qaGroupApplicants": "المتقدمون",
+  "qaViewApplicants": "عرض المتقدمين",
+  "qaQuickSearch": "البحث السريع",
+  "qaMailPreview": "معاينة البريد",
+  "qaSavedFields": "الحقول المحفوظة",
+  "qaGroupJobs": "الوظائف والمقابلات",
+  "qaCreateJob": "إنشاء وظيفة جديدة",
+  "qaCalendar": "التقويم",
+  "qaJobOffers": "عروض العمل",
+  "qaJobContracts": "عقود العمل",
+  "qaGroupCompanies": "الشركات والإعدادات",
+  "qaCompanies": "الشركات",
+  "qaCompanySettings": "إعدادات الشركة",
+  "qaInterviewSettings": "إعدادات المقابلات",
+  "qaUsers": "المستخدمون"
 }

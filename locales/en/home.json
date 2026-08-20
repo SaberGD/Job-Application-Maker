@@ -17,5 +17,22 @@
   "hoursAgo": "{hours} hours ago",
   "yesterday": "yesterday",
   "daysAgo": "{days} days ago",
-  "selectCompany": "Select a company to view dashboard"
+  "selectCompany": "Select a company to view dashboard",
+  "quickActionsTitle": "Quick Actions",
+  "mostUsed": "Most Used",
+  "qaGroupApplicants": "Applicants",
+  "qaViewApplicants": "View Applicants",
+  "qaQuickSearch": "Quick Search",
+  "qaMailPreview": "Mail Preview",
+  "qaSavedFields": "Saved Fields",
+  "qaGroupJobs": "Jobs & Interviews",
+  "qaCreateJob": "Create New Job",
+  "qaCalendar": "Calendar",
+  "qaJobOffers": "Job Offers",
+  "qaJobContracts": "Job Contracts",
+  "qaGroupCompanies": "Companies & Settings",
+  "qaCompanies": "Companies",
+  "qaCompanySettings": "Company Settings",
+  "qaInterviewSettings": "Interview Settings",
+  "qaUsers": "Users"
 }
